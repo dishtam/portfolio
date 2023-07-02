@@ -5,6 +5,20 @@ import * as THREE from 'three';
 import moonImage from '../../Images/moon.jpg';
 import venusImage from '../../Images/venus.jpg';
 import spaceImage from '../../Images/space.jpg';
+import {Typography} from '@mui/material'
+import TimeLine from '../TimeLine/TimeLine';
+import {
+    SiCplusplus,
+    SiReact,
+    SiJavascript,
+    SiMongodb,
+    SiNodedotjs,
+    SiExpress,
+    SiCss3,
+    SiHtml5,
+    SiThreedotjs,
+  } from "react-icons/si";
+import Extracurricular from '../Extracurricular/Extracurricular';
 
 const Home = () => {
 
@@ -101,10 +115,70 @@ const Home = () => {
     <div className='home'>
         <canvas className='homeCanvas'></canvas>
         <div className='homeContainer'>
-           
+           <Typography variant='h3'>TIMELINE</Typography>
+           <TimeLine timelines={[1,2,3,4]}/>
+        </div>
+        <div className='homeSkills'>
+            <Typography variant='h3'>SKILLS</Typography>
+            <div className='homeCubeSkills'>
+                <div className='homeCubeSkillsFaces homeCubeSkillsFace1'>
+                    <img 
+                        src='https://th.bing.com/th/id/OIP.eV1yBtQ0xPhr0n56ewhcxwHaFj?pid=ImgDet&rs=1'
+                        alt='Face1'
+                    />
+                </div>
+                <div className='homeCubeSkillsFaces homeCubeSkillsFace2'>
+                    <img 
+                        src='https://th.bing.com/th/id/OIP.eV1yBtQ0xPhr0n56ewhcxwHaFj?pid=ImgDet&rs=1'
+                        alt='Face2'
+                    />
+                </div>
+                <div className='homeCubeSkillsFaces homeCubeSkillsFace3'>
+                    <img 
+                        src='https://th.bing.com/th/id/OIP.eV1yBtQ0xPhr0n56ewhcxwHaFj?pid=ImgDet&rs=1'
+                        alt='Face3'
+                    />
+                </div>
+                <div className='homeCubeSkillsFaces homeCubeSkillsFace4'>
+                    <img 
+                        src='https://th.bing.com/th/id/OIP.eV1yBtQ0xPhr0n56ewhcxwHaFj?pid=ImgDet&rs=1'
+                        alt='Face4'
+                    />
+                </div>
+                <div className='homeCubeSkillsFaces homeCubeSkillsFace5'>
+                    <img 
+                        src='https://th.bing.com/th/id/OIP.eV1yBtQ0xPhr0n56ewhcxwHaFj?pid=ImgDet&rs=1'
+                        alt='Face5'
+                    />
+                </div>
+                <div className='homeCubeSkillsFaces homeCubeSkillsFace6'>
+                    <img 
+                        src='https://th.bing.com/th/id/OIP.eV1yBtQ0xPhr0n56ewhcxwHaFj?pid=ImgDet&rs=1'
+                        alt='Face6'
+                    />
+                </div>
+            </div>
+            <div className='cubeShadow'></div>
+            <div className="homeskillsBox" id="homeskillsBox">
+                <SiCplusplus />
+                <SiHtml5 />
+                <SiCss3 />
+                <SiJavascript />
+                <SiMongodb />
+                <SiExpress />
+                <SiReact />
+                <SiNodedotjs />
+                <SiThreedotjs />
+            </div>
+        </div>
+        <div className='homeExtracurricular'>
+            <Typography variant='h3'>EXTRACURRICULAR</Typography>
+            <div className='homeExtracurricularWrapper'>
+                <Extracurricular />
+            </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
