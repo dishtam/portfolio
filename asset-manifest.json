@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dishtam/portfolio-website.git/static/css/main.93747c39.css",
+    "main.js": "/dishtam/portfolio-website.git/static/js/main.0497ebe0.js",
+    "static/media/moon.jpg": "/dishtam/portfolio-website.git/static/media/moon.ec9d16757c33a83a4e2f.jpg",
+    "static/media/venus.jpg": "/dishtam/portfolio-website.git/static/media/venus.c093898c8e79f21d8154.jpg",
+    "static/media/logo.png": "/dishtam/portfolio-website.git/static/media/logo.5a3669dce427532b7c8f.png",
+    "static/media/rohit_image.jpeg": "/dishtam/portfolio-website.git/static/media/rohit_image.0596b5a74faa87e51368.jpeg",
+    "static/media/space.jpg": "/dishtam/portfolio-website.git/static/media/space.167f7b1f3402562b8e43.jpg",
+    "index.html": "/dishtam/portfolio-website.git/index.html",
+    "main.93747c39.css.map": "/dishtam/portfolio-website.git/static/css/main.93747c39.css.map",
+    "main.0497ebe0.js.map": "/dishtam/portfolio-website.git/static/js/main.0497ebe0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93747c39.css",
+    "static/js/main.0497ebe0.js"
+  ]
+}
