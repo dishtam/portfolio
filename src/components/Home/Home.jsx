@@ -110,7 +110,7 @@ const Home = () => {
         };
         animate();
     },[])
-
+    const extracurriculars =[1,2,3];
     return (
     <div className='home'>
         <canvas className='homeCanvas'></canvas>
@@ -174,7 +174,13 @@ const Home = () => {
         <div className='homeExtracurricular'>
             <Typography variant='h3'>EXTRACURRICULAR</Typography>
             <div className='homeExtracurricularWrapper'>
-                <Extracurricular />
+            {extracurriculars.map((item) => (
+            <Extracurricular
+              image=""
+              title="This is title"
+              url=""
+            />
+          ))}
             </div>
         </div>
     </div>

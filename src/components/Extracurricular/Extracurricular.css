@@ -1,4 +1,4 @@
-.extracurricular {
+.extracurricularCard {
     width: 300px;
     transition: all 0.5s;
     padding: 1vmax;
@@ -7,23 +7,23 @@
     display: flex;
     flex-direction: column;
   }
-  .extracurricular > a {
+  .extracurricularCard > a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.712);
     width: inherit;
   }
   
-  .extracurricular img {
+  .extracurricularCard img {
     width: inherit;
   }
   
-  .extracurricular:hover {
+  .extracurricularCard:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
   }
   
   @media screen and (max-width: 600px) {
-    .extracurricular {
+    .extracurricularCard {
       width: 200px;
     }
   }

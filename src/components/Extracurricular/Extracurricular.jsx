@@ -1,13 +1,31 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import { FaTrash } from "react-icons/fa";
-import { useDispatch } from "react-redux";
 import "./Extracurricular.css";
 
-const Extracurricular = () => {
+const Extracurricular = ({
+  url = "",
+  title = "Title Here",
+  image,
+  isAdmin = false,
+}) => {
   return (
-    <div>
-      
+    <div className="extracurricularCard">
+      <a href={url} target="blank">
+        <img src={image} alt="Club Activities" />
+        <Typography>{title}</Typography>
+      </a>
+      {isAdmin && (
+        <Button
+          style={{
+            margin: "auto",
+            display: "block",
+            color: "rgba(40,40,40,0.7)",
+          }}
+        >
+          <FaTrash />
+        </Button>
+      )}
     </div>
   )
 }
