@@ -12,7 +12,7 @@ import Login from './components/Login/Login';
 
 function App() {
   return (
-  <Router basename='/portfolio-website'>
+  <Router basename='/portfolio'>
     <Header />
     <Routes>
       <Route path='/' element={<Home />}/>
