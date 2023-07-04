@@ -112,7 +112,7 @@
     transform: scale(1.5);
   }
 
-  .homeExtracurricular {
+  .homeYoutube {
     background-color: white;
     padding-top: 4vmax;
     transform: translateY(-200px);
@@ -123,13 +123,13 @@
     min-height: 1000px;
   }
 
-  .homeExtracurricular > h3 {
+  .homeYoutube > h3 {
     text-align: center;
     color: rgba(22, 20, 20, 0.904);
     padding: 4vmax;
   }
 
-  .homeExtracurricularWrapper {
+  .homeYoutubeWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

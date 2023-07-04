@@ -18,7 +18,7 @@ import {
     SiHtml5,
     SiThreedotjs,
   } from "react-icons/si";
-import Extracurricular from '../Extracurricular/Extracurricular';
+import Youtube from '../Youtube/Youtube';
 
 const Home = () => {
 
@@ -110,7 +110,7 @@ const Home = () => {
         };
         animate();
     },[])
-    const extracurriculars =[1,2,3];
+    const youtubes =[1,2,3];
     return (
     <div className='home'>
         <canvas className='homeCanvas'></canvas>
@@ -171,11 +171,11 @@ const Home = () => {
                 <SiThreedotjs />
             </div>
         </div>
-        <div className='homeExtracurricular'>
-            <Typography variant='h3'>EXTRACURRICULAR</Typography>
-            <div className='homeExtracurricularWrapper'>
-            {extracurriculars.map((item) => (
-            <Extracurricular
+        <div className='homeYoutube'>
+            <Typography variant='h3'>VIDEOS</Typography>
+            <div className='homeYoutubeWrapper'>
+            {youtubes.map((item) => (
+            <Youtube
               image=""
               title="This is title"
               url=""

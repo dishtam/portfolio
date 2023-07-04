@@ -1,16 +1,16 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import { FaTrash } from "react-icons/fa";
-import "./Extracurricular.css";
+import "./Youtube.css";
 
-const Extracurricular = ({
+const Youtube = ({
   url = "",
   title = "Title Here",
   image,
   isAdmin = false,
 }) => {
   return (
-    <div className="extracurricularCard">
+    <div className="youtubeCard">
       <a href={url} target="blank">
         <img src={image} alt="Club Activities" />
         <Typography>{title}</Typography>
@@ -30,4 +30,4 @@ const Extracurricular = ({
   )
 }
 
-export default Extracurricular
+export default Youtube

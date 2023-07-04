@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
@@ -8,11 +8,18 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Login from './components/Login/Login';
+import { getUser } from './actions/user';
+import {useDispatch} from 'react-redux';
 
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getUser());
+  },[dispatch]);
+
   return (
-  <Router basename='/portfolio'>
+  <Router >
     <Header />
     <Routes>
       <Route path='/' element={<Home />}/>
