@@ -12,8 +12,8 @@ export default function PieChart() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          // "https://alfa-leetcode-api.onrender.com/rohhiiiit/solved"
-          "http://localhost:3000/rohhiiiit/solved"
+          "https://alfa-leetcode-api.onrender.com/rohhiiiit/solved"
+          // "http://localhost:3000/rohhiiiit/solved"
         );
 
         const pieData = {

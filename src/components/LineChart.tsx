@@ -61,8 +61,8 @@ export default function LineChart() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          // "https://alfa-leetcode-api.onrender.com/rohhiiiit/contest"
-          "http://localhost:3000/rohhiiiit/contest"
+          "https://alfa-leetcode-api.onrender.com/rohhiiiit/contest"
+          // "http://localhost:3000/rohhiiiit/contest"
         );
 
         const contestParticipation:contestParticipationType = response.data.contestParticipation;
