@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear(); // Get the current year
 
@@ -16,13 +18,25 @@ export default function Footer() {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6 uppercase">
+              <Link to="/" className="hover:underline me-4 md:me-6 uppercase">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline uppercase">
+              <Link
+                to="/contact"
+                className="hover:underline me-4 md:me-6 uppercase"
+              >
                 Contact
+              </Link>
+            </li>
+            <li>
+              <a
+                href="https://github.com/dishtam/portfolio"
+                className="hover:underline me-4 md:me-6 uppercase"
+                target="_blank"
+              >
+                Source Code
               </a>
             </li>
           </ul>
