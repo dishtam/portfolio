@@ -1,5 +1,4 @@
 import ProjectCard from "../components/ProjectCard";
-import bg from "/bg1.png";
 import projects from "../data/project";
 import { useState } from "react";
 import StackCard from "../components/StackCard";
@@ -27,7 +26,11 @@ export default function Project() {
             &lt;
           </button>
           <div className="transition-transform duration-1000 ease-in-out">
-            <ProjectCard title={projects[currentSlide].title} url={bg}>
+            <ProjectCard
+              title={projects[currentSlide].title}
+              link={projects[currentSlide].link}
+              url={projects[currentSlide].url}
+            >
               {projects[currentSlide].content}
             </ProjectCard>
           </div>
