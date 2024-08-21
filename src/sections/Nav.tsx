@@ -1,4 +1,6 @@
 import { useState } from "react";
+import DownloadResume from "../components/DownloadResume";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [toggle, setTogle] = useState<boolean>(false);
@@ -15,16 +17,13 @@ export default function Nav() {
         {/* For Desktop */}
         <div className="hidden sm:flex sm:gap-4 sm:hover:cursor-pointer">
           <div className="flex flex-col after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
-            ABOUT
+            <Link to="/">ABOUT</Link>
           </div>
           <div className="flex flex-col after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
-            CONTACT
+            <Link to="/contact">CONTACT</Link>
           </div>
           <div className="flex flex-col after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
-            <span>
-              <i className="fa fa-download px-2"></i>
-              RESUME
-            </span>
+            <DownloadResume />
           </div>
         </div>
         {/* For Mobile */}
@@ -43,7 +42,7 @@ export default function Nav() {
               CONTACT
             </div>
             <div className="flex flex-col after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
-              RESUME
+              <DownloadResume />
             </div>
           </div>
         </div>
