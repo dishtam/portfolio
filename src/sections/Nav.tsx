@@ -15,7 +15,7 @@ export default function Nav() {
           ROHIT ROY
         </div>
         {/* For Desktop */}
-        <div className="hidden sm:flex sm:gap-4 sm:hover:cursor-pointer">
+        <div className="hidden md:flex md:gap-4 md:hover:cursor-pointer">
           <div className="flex flex-col after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
             <Link to="/">ABOUT</Link>
           </div>
@@ -27,19 +27,19 @@ export default function Nav() {
           </div>
         </div>
         {/* For Mobile */}
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <i className="fa fa-bars" onClick={() => setTogle(!toggle)}></i>
         </div>
       </div>
       {/* Toggle */}
       {toggle ? (
-        <div className="sm:hidden flex hover:cursor-pointer shadow-md">
+        <div className="md:hidden flex hover:cursor-pointer shadow-md">
           <div className="flex flex-col p-8 pt-3 pb-2">
             <div className="flex flex-col mb-1 after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
-              ABOUT
+              <Link to="/">ABOUT</Link>
             </div>
             <div className="flex flex-col mb-1 after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
-              CONTACT
+              <Link to="/contact">CONTACT</Link>
             </div>
             <div className="flex flex-col after:content-[''] after:block after:bg-blood after:w-0 after:h-0.5 after:transistion-all after:duration-300 hover:after:w-full">
               <DownloadResume />

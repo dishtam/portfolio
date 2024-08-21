@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-1">
+    <footer className="bg-white rounded-lg shadow  m-1">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
@@ -12,7 +12,7 @@ export default function Footer() {
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <img src="/bg1.png" className="h-8" alt="Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap ">
               Rohit Roy
             </span>
           </a>

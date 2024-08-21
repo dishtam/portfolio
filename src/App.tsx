@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
  
 function App() {
   return (
-    <div className="m-0 p-0 box-border">
+    <div className="w-screen m-0 p-0 box-border">
       <Router>
         <Nav />
         <Routes>

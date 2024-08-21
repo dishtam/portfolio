@@ -4,11 +4,11 @@ import PieChart from "../components/PieChart";
 
 export default function Coding() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-2 m-10 p-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 m-10 p-10">
       <div className="flex w-full justify-center items-center gap-3">
-        <Card id="C++" subheading="This is subheading 1">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
-          aliquid.
+        <Card id="C++" subheading="CPP and DSA stats">
+          Attended over 40 LeetCode contests and achieved a highest rating of
+          1680.
         </Card>
         <div className="w-64">
           <PieChart />
